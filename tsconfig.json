@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "declaration": true,
+    "importHelpers": true,
+    "module": "commonjs",
+    "lib": ["dom", "es6", "es2021", "esnext.asynciterable"],
+    "outDir": "dist",
+    "rootDir": "src",
+    "strict": true,
+    "target": "es2019"
+  },
+  "include": [
+    "src/**/*"
+  ]
+}
