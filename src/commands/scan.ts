@@ -98,6 +98,7 @@ export default class Scan extends Command {
 
       if (!newFollows.length && !unfollowed.length) {
         this.log(bold(yellow("No changes since last scan.")));
+        await browser.close();
         return;
       }
 
