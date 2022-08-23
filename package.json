@@ -1,6 +1,6 @@
 {
   "name": "igtrack",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Instagram followers tracker",
   "author": "itskarudo @itskarudo",
   "bin": {
@@ -22,6 +22,7 @@
     "@oclif/plugin-plugins": "^2.0.1",
     "colorette": "^2.0.19",
     "fs-extra": "^10.1.0",
+    "igtrack": "^0.0.1",
     "puppeteer": "^16.2.0"
   },
   "devDependencies": {

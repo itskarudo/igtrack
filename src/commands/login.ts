@@ -11,7 +11,7 @@ export default class Login extends Command {
     const username = await CliUx.ux.prompt("Your username");
     const password = await CliUx.ux.prompt("Your password", { type: "hide" });
 
-    const browser = await puppeteer.launch({ headless: false });
+    const browser = await puppeteer.launch();
     const page = await browser.newPage();
     await page.goto("https://instagram.com");
 
