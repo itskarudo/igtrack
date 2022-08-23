@@ -1,10 +1,10 @@
 # ✨ IGTrack
 
-Track instagram new follows and unfollowes on your acconut.
+Track instagram new follows and unfollowers on your account.
 
 Why you wouldn't wanna use this:
 
-- it stores your credentials as plaintext
+- it stores your credentials in plaintext
 - it doesn't handle errors correctly
 - the code is a mess
 - you hate me
