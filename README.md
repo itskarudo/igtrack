@@ -13,12 +13,6 @@ Why you would wanna use this:
 
 - it's cool ig
 
-# 🚀 Getting Started
-
-```sh-session
-$ npm install -g igtrack
-```
-
 # 📖 Usage:
 
 Logging into your account:
