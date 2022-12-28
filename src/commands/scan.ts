@@ -1,4 +1,4 @@
-import { Command } from "@oclif/core";
+import { Command, CliUx } from "@oclif/core";
 import * as puppeteer from "puppeteer";
 import * as fs from "fs-extra";
 import * as path from "path";
@@ -58,6 +58,19 @@ export default class Scan extends Command {
       this.error(
         bold(red("Your config file is corrupted, please log in again"))
       );
+    }
+
+    await Promise.any([
+      page.waitForSelector("input[name=verificationCode]"),
+      page.waitForNetworkIdle(),
+    ]);
+
+    const tfa = await page.$("input[name=verificationCode]");
+    if (tfa) {
+      const code = await CliUx.ux.prompt("Enter OTP");
+      await tfa.type(code);
+      await page.click("._acan._aiit._acap._aijb._acas._aj1-");
+      await page.waitForNavigation();
     }
 
     await page.goto(`https://instagram.com/${username}/followers`);
