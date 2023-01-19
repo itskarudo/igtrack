@@ -69,7 +69,7 @@ export default class Scan extends Command {
     if (tfa) {
       const code = await CliUx.ux.prompt("Enter OTP");
       await tfa.type(code);
-      await page.click("._acan._aiit._acap._aijb._acas._aj1-");
+      await page.click("._acan._acap._acas._aj1-");
       await page.waitForNavigation();
     }
 
