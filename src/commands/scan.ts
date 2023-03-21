@@ -74,8 +74,9 @@ export default class Scan extends Command {
     }
 
     await page.goto(`https://instagram.com/${username}/followers`);
-    await page.waitForSelector("._aba8");
-    await page.waitForSelector("._aba8", {hidden: true});
+    await page.waitForSelector("._aano");
+    await page.waitForFunction("document.querySelector('._aano').children.length > 2");
+    await page.waitForFunction("document.querySelector('._aano').children.length <= 2");
 
     const newFollowers = await page.evaluate(() => {
       return new Promise<string[]>((resolve, _) => {
