@@ -4,12 +4,15 @@
   "description": "Instagram followers tracker",
   "author": "itskarudo @itskarudo",
   "bin": {
-    "igtrack": "./bin/run"
+    "igtrack": "bin/run"
   },
   "homepage": "https://github.com/itskarudo/igtrack",
   "license": "MIT",
   "main": "dist/index.js",
-  "repository": "itskarudo/igtrack",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/itskarudo/igtrack.git"
+  },
   "files": [
     "/bin",
     "/dist",
@@ -70,7 +73,9 @@
   "engines": {
     "node": ">=12.0.0"
   },
-  "bugs": "https://github.com/itskarudo/igtrack/issues",
+  "bugs": {
+    "url": "https://github.com/itskarudo/igtrack/issues"
+  },
   "keywords": [
     "oclif"
   ],
